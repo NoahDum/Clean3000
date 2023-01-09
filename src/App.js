@@ -9,15 +9,13 @@ export default class App extends Component {
     avis: [
       {
         id: Date.now(),
-        text: "Test",
       }
     ]
   }
 
-  addTodo() {
+  addAvis() {
     const newAvis = {
       id: Date.now(),
-      text: this.state.text,
     };
     const copyAvis = [...this.state.avis];
     copyAvis.push(newAvis);
@@ -44,6 +42,7 @@ export default class App extends Component {
         <List
           key={item.id}
           number={item.id}
+          text = {item.text}
           item={item}
           buttonAction={() => this.deleteAvis(item)}
         />
@@ -65,7 +64,8 @@ export default class App extends Component {
         </header>
         <main className="container">
           <h1>Avis de passage</h1>
-          <div><button onClick={() => this.addTodo()}>Ajouter un Avis</button></div>
+          <div>
+            <button onClick={() => this.addAvis()} className="btnAdd">Ajouter un Avis</button></div>
           <div>
             {this.renderAvis()}
           </div>

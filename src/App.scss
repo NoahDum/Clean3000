@@ -9,7 +9,7 @@
     }
 }
 .container {
-  margin: 4rem 1rem;
+  margin: 3rem 3rem;
 }
 
 h1{
@@ -25,3 +25,25 @@ h1{
   color:white;
 }
 
+.btnDetails{
+  background-color: rgb(85, 171, 65);
+  border-radius: 1rem;
+  border: 0;
+  font-size: large;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.btnDelete{
+  background-color: rgb(235, 45, 45);
+  border-radius: 1rem;
+  border: 0;
+  font-size: large;
+  margin-bottom: 10px;
+}
+.btnAdd{
+  background-color: rgb(61, 61, 51);
+  color: white;
+  border: 0;
+  font-size: large;
+  padding: 10px;
+}
