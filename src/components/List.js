@@ -36,7 +36,7 @@ function List({ item, buttonAction, number }) {
     const onSubmit =
         (event)=>{
             event.preventDefault();
-            localStorage.setItem('value', name)
+            localStorage.setForm('value')
         }
     return (
         <div className="Mes-avis">
@@ -63,7 +63,7 @@ function List({ item, buttonAction, number }) {
                         Supprimer l'Avis
                     </button>
                 </div>
-                <button onClick={onSubmit, addForm} >submit</button>
+                <button onClick={onSubmit} >submit</button>
             </span>
             <button onClick={() => navigate('/newAvis')}>voir les avis</button>
         </div>

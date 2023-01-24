@@ -5,7 +5,6 @@ import List from './components/List';
 
 export default class App extends Component {
   state = {
-    text: "",
     avis: [
       {
         id: Date.now(),
@@ -22,7 +21,6 @@ export default class App extends Component {
 
     this.setState({
       avis: copyAvis,
-      text: ""
     });
   }
 
